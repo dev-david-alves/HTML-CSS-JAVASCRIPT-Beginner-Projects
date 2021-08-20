@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Binary to Decimal</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<main>
+		<section>
+			<div>
+				<span>Binary to Decimal</span>
+				<div class="input-place">
+					<input type="text" id="bin2dec" placeholder="Enter a value in binary..." onkeyup="check_bin2dec(this.value)">
+					<!-- <button onclick="check_bin2dec()">Convert</button> -->
+				</div>
+			</div>
+			<div class="input-place">
+				<span>Conversion Result</span>
+				<input type="text" id="bin2dec_result" disabled>
+			</div>
+		</section>
+		<hr/>
+		<section>
+			<div>
+				<span>Decimal to Binary</span>
+				<div class="input-place">
+					<input type="text" id="dec2bin" placeholder="Enter a value in decimal..." onkeyup="check_dec2bin(this.value)">
+					<!-- <button onclick="check_dec2bin()">Convert</button> -->
+				</div>
+			</div>
+			<div class="input-place">
+				<span>Conversion Result</span>
+				<input type="text" id="dec2bin_result" disabled>
+			</div>
+		</section>
+	</main>
+	<script type="text/javascript" src="main.js"></script>
+</body>
+</html>
