@@ -6,13 +6,15 @@
 	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
+	<div id="title">
+		<h1>Convert Binary to Decimal <span>and Decimal to Binary</span></h1>
+	</div>
 	<main>
 		<section>
 			<div>
 				<span>Binary to Decimal</span>
 				<div class="input-place">
 					<input type="text" id="bin2dec" placeholder="Enter a value in binary..." onkeyup="check_bin2dec(this.value)">
-					<!-- <button onclick="check_bin2dec()">Convert</button> -->
 				</div>
 			</div>
 			<div class="input-place">
@@ -26,7 +28,6 @@
 				<span>Decimal to Binary</span>
 				<div class="input-place">
 					<input type="text" id="dec2bin" placeholder="Enter a value in decimal..." onkeyup="check_dec2bin(this.value)">
-					<!-- <button onclick="check_dec2bin()">Convert</button> -->
 				</div>
 			</div>
 			<div class="input-place">
@@ -35,6 +36,17 @@
 			</div>
 		</section>
 	</main>
+	<footer>
+		<div id="author">
+			<span>by</span> 
+			<h2>David Alves Soares</h2>
+		</div>
+		<a href="https://github.com/dev-david-alves" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-github" aria-hidden="true"></i>
+			My GitHub
+		</a>
+	</footer>
 	<script type="text/javascript" src="main.js"></script>
+	<script src="https://use.fontawesome.com/8f27db9a15.js"></script>
 </body>
 </html>
