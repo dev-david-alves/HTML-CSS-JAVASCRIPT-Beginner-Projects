@@ -16,14 +16,12 @@ const check_bin2dec = (e) => {
 					can_convert = true;
 				} else {
 					can_convert = false;
-					// alert("You can only type 0 or 1.");
 					bin2dec_result.style.color = "#ed0000";
 					bin2dec_result.value = "Error, You must enter only 0 or 1.";
 					break;
 				}
 			} else {
 				can_convert = false;
-				// alert("Enter a numeric value.");
 				bin2dec_result.style.color = "#ed0000";
 				bin2dec_result.value = "Error, You must enter a numeric value.";
 				break;
@@ -33,7 +31,6 @@ const check_bin2dec = (e) => {
 		bin2dec_result.style.color = "#ffffff";
 		bin2dec_result.value = "";
 	 	can_convert = false;
-	// 	alert("Enter some binary value.");
 	}
 
 	if(can_convert) {
@@ -78,7 +75,6 @@ const check_dec2bin = (e) => {
 				can_convert = true;
 			} else {
 				can_convert = false;
-				// alert("Enter a numeric value.");
 				dec2bin_result.style.color = "#ed0000";
 				dec2bin_result.value = "Error, You must enter a numeric value.";
 				break;
@@ -88,7 +84,6 @@ const check_dec2bin = (e) => {
 		dec2bin_result.style.color = "#ffffff";
 		dec2bin_result.value = "";
 		can_convert = false;
-	// 	alert("Enter some decimal value.");
 	}
 
 	if(can_convert) {
