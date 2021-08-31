@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Simple Calculator</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="title">
+		<h1>Simple Calculator</h1>
+	</div>
+	<main>
+		<div class="calc">
+			<div class="calc-top" id="calc-top"></div>
+			<div class="view">
+				<input type="text" id="calc-view" value="" disabled>
+			</div>
+			<div class="calc-bottom">
+				<div id="left-side">
+					<div class="row">
+						<input type="button" id="c" value="C" onclick="clean()">
+						<input type="button" id="ac" value="AC" onclick="cleanAll()">
+					</div>
+					<div class="row">
+						<input type="button" value="1" onclick="putDigit(this.value)">
+						<input type="button" value="2" onclick="putDigit(this.value)">
+						<input type="button" value="3" onclick="putDigit(this.value)">
+					</div>
+					<div class="row">
+						<input type="button" value="4" onclick="putDigit(this.value)">
+						<input type="button" value="5" onclick="putDigit(this.value)">
+						<input type="button" value="6" onclick="putDigit(this.value)">
+					</div>
+					<div class="row">
+						<input type="button" value="7" onclick="putDigit(this.value)">
+						<input type="button" value="8" onclick="putDigit(this.value)">
+						<input type="button" value="9" onclick="putDigit(this.value)">
+					</div>
+					<div class="row">
+						<input type="button" value="0" onclick="putDigit(this.value)">
+						<input type="button" value="," onclick="putDigit(this.value)">
+						<input type="button" value="+/-" id="i" onclick="invertSign()">
+					</div>
+				</div>
+				<div id="right-side">
+					<input type="button" value="/" onclick="putDigit(this.value)">
+					<input type="button" value="x" id="*" onclick="putDigit(this.id)">
+					<input type="button" value="-" onclick="putDigit(this.value)">
+					<input type="button" value="+" onclick="putDigit(this.value)">
+					<input type="button" value="=" id="equal" onclick="compare(this.value)">
+				</div>
+			</div>
+		</div>
+	</main>
+	
+	<footer>
+		<div id="author">
+			<span>by</span> 
+			<h2>David Alves Soares</h2>
+		</div>
+		<a href="https://github.com/dev-david-alves" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-github" aria-hidden="true"></i>
+			My GitHub
+		</a>
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://use.fontawesome.com/8f27db9a15.js"></script>
+</body>
+</html>
