@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Christmas Lights</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="tooltips">
+		<ul>
+			<li>Click on the circle to change its color</li>
+			<li>The higher the value chosen for "speed", slower the LEDs will be</li>
+			<li>The higher the value chosen for "intensity", greater the brightness of the light will be</li>
+		</ul>
+	</div>
+	<div id="title">
+		<h1>Christmas Lights</h1>
+	</div>
+	
+	<main>
+		<div class="container">
+			<div class="circle-wrap">
+				<div class="circle" id="circle-1">
+					<input type="color" id="--color-1" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-1" value="100" onchange="setWidth(1, this.value)" onkeyup="setWidth(1, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-2">
+					<input type="color" id="--color-2" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-2" value="100" onchange="setWidth(2, this.value)" onkeyup="setWidth(2, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-3">
+					<input type="color" id="--color-3" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-3" value="100" onchange="setWidth(3, this.value)" onkeyup="setWidth(3, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-4">
+					<input type="color" id="--color-4" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-4" value="100" onchange="setWidth(4, this.value)" onkeyup="setWidth(4, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-5">
+					<input type="color" id="--color-5" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-5" value="100" onchange="setWidth(5, this.value)" onkeyup="setWidth(5, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-6">
+					<input type="color" id="--color-6" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-6" value="100" onchange="setWidth(6, this.value)" onkeyup="setWidth(6, this.value)">
+			</div>
+			<div class="circle-wrap">
+				<div class="circle" id="circle-7">
+					<input type="color" id="--color-7" onchange="setColor(this.id, this.value)">
+				</div>
+				<input type="number" min="50" max="150" class="circle-size" id="size-7" value="100" onchange="setWidth(7, this.value)" onkeyup="setWidth(7, this.value)">
+			</div>
+		</div>
+		<div class="controls">
+			<div class="intensity">
+				<label>Toggle On/Off</label>
+				<button id="turn" class="off" onclick="turn()"><i class="fa fa-power-off" aria-hidden="true"></i></button>
+			</div>
+			<div class="intensity">
+				<label>Speed</label>
+				<input type="number" min="0" max="10" step="0.1" id="intensity_speed" value="1" onchange="setInterval()" placeholder="from 1 to 10">
+				<button onclick="setInterval()">Set</button>
+			</div>
+			<div class="intensity">
+				<label>Intensity</label>
+				<input type="number" min="0" max="10" step="0.1" id="intensity_smooth" value="10" onchange="setIntensity()" placeholder="from 1 to 10">
+				<button onclick="setIntensity()">Set</button>
+			</div>
+		</div>
+	</main>
+
+	<footer>
+		<div id="author">
+			<span>by</span> 
+			<h2>David Alves Soares</h2>
+		</div>
+		<a href="https://github.com/dev-david-alves" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-github" aria-hidden="true"></i>
+			My GitHub
+		</a>
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://use.fontawesome.com/8f27db9a15.js"></script>
+</body>
+</html>
