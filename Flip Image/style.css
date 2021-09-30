@@ -1,0 +1,225 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+	text-decoration: none;
+}
+
+body {
+	width: 100%;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;	
+	background: #ee0979;
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+	background: linear-gradient(to right, #d15801, #bb025b);
+}
+
+#title {
+	padding: 30px;
+}
+
+h1 {
+	color: #ffffff;
+	text-transform: uppercase;
+}
+
+.row {
+	width: 500px;
+	display: flex;
+	margin-bottom: 70px;
+	justify-content: space-around;
+}
+
+.box {
+	width: 150px;
+	height: 150px;
+	border: none;
+	border-radius: 10%;
+	position: relative;
+	background-image: url('./landscape.jpg');
+	background-size: cover;
+  	background-position: center;
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	transition: transform 0.3s;
+  	transform-style: preserve-3d;
+}
+
+.flip-vertically {
+  transform: rotateX(180deg);
+}
+
+.flip-horizontally {
+	-webkit-transform: scaleX(-1);
+  	transform: scaleX(-1);
+}
+
+.container {
+	width: 150px;
+	height: 150px;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.container span {
+	font-size: 30px;
+	color: #ffffff;
+	cursor: pointer;
+	transition: .3s ease-in-out;
+}
+
+.container span:hover {
+	color: #e4e2e2;
+	transition: .3s ease-in-out;
+}
+
+.left {
+	position: absolute;
+	left: 0%;
+	top: 50%;
+	transform: translate(calc(-100% - 5px), -50%);
+	z-index: 10;
+}
+
+.up {
+	position: absolute;
+	left: 50%;
+	top: 0%;
+	transform: translate(-50%, -100%);
+	z-index: 10;
+}
+
+.right {
+	position: absolute;
+	top: 50%;
+	right: 0%;
+	transform: translate(calc(100% + 5px), -50%);
+	z-index: 10;
+}
+
+.down {
+	position: absolute;
+	left: 50%;
+	bottom: 0%;
+	transform: translate(-50%, 100%);
+	z-index: 10;
+}
+
+/* url Box */
+
+#set-url {
+	width: 500px;
+	padding: 30px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: -35px;
+}
+
+#set-url-input {
+	width: 75%;
+	height: 40px;
+	border: none;
+	border-radius: 20px 0px 0px 20px;
+	outline: none;
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	padding: 0px 20px;
+	font-size: 16px;
+	font-weight: bold;
+}
+
+#set-url-button {
+	width: 25%;
+	height: 40px;
+	border: none;
+	border-radius: 0px 20px 20px 0px;
+	outline: none;
+	background: #ee0979;
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+	background: linear-gradient(to right, #ff6a00, #ee0979);
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	cursor: pointer;
+	font-size: 18px;
+	color: #ffffff;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+#set-url-button:hover {
+	background: #d40067;
+	background: -webkit-linear-gradient(to right, #dd5d01, #d30066);
+	background: linear-gradient(to right, #dd5d01, #d30066);
+}
+
+/* Footer */
+
+footer {
+	background: #ee0979;
+	background: -webkit-linear-gradient(to right, #ff6a00, #ee0979);
+	background: linear-gradient(to right, #ff6a00, #ee0979);
+	width: 100%;
+	height: 40px;
+	position: absolute;
+	bottom: 0%;
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+footer #author {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer span, a {
+	font-size: 15px;
+	color: #ffffff;
+	margin-right: 10px;
+	font-weight: bold;
+}
+
+footer h2 {
+	font-size: 16px;
+	color: #ffffff;
+	margin-right: 10px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+/* Card */
+
+#card-box {
+	position: fixed;
+	width: 300px;
+	height: 60px;
+	border-radius: 30px;
+	background-color: #ffffff;
+	box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-webkit-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	-moz-box-shadow: 5px 5px 7px 0px rgba(0,0,0,0.41);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	transition: 1s linear;
+}
+
+#card-box span {
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+}

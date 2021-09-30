@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Flip Image</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div id="title">
+		<h1>Flip Image</h1>
+	</div>
+	<main>
+		<div class="row">
+			<div class="container">
+				<span class="left" onclick="flipImage(0, 'left')"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+				<span class="up" onclick="flipImage(0, 'up')"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
+				<div class="box"></div>
+				<span class="right" onclick="flipImage(0, 'right')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+				<span class="down" onclick="flipImage(0, 'down')"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+			</div>
+
+			<div class="container">
+				<span class="left" onclick="flipImage(1, 'left')"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+				<span class="up" onclick="flipImage(1, 'up')"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
+				<div class="box"></div>
+				<span class="right" onclick="flipImage(1, 'right')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+				<span class="down" onclick="flipImage(1, 'down')"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+			</div>
+		</div>
+		<div class="row">
+			<div class="container">
+				<span class="left" onclick="flipImage(2, 'left')"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+				<span class="up" onclick="flipImage(2, 'up')"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
+				<div class="box"></div>
+				<span class="right" onclick="flipImage(2, 'right')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+				<span class="down" onclick="flipImage(2, 'down')"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+			</div>
+			<div class="container">
+				<span class="left" onclick="flipImage(3, 'left')"><i class="fa fa-arrow-circle-left" aria-hidden="true"></i></span>
+				<span class="up" onclick="flipImage(3, 'up')"><i class="fa fa-arrow-circle-up" aria-hidden="true"></i></span>
+				<div class="box"></div>
+				<span class="right" onclick="flipImage(3, 'right')"><i class="fa fa-arrow-circle-right" aria-hidden="true"></i></span>
+				<span class="down" onclick="flipImage(3, 'down')"><i class="fa fa-arrow-circle-down" aria-hidden="true"></i></span>
+			</div>
+		</div>
+	</main>
+
+	<div id="set-url">
+		<input type="text" id="set-url-input" placeholder="Custom url...">
+		<button id="set-url-button" onclick="checkImage()">Display</button>
+	</div>
+
+	<div id="card-box">
+		<span>Error, URL is not found!</span>
+	</div>
+	
+	<footer>
+		<div id="author">
+			<span>by</span> 
+			<h2>David Alves Soares</h2>
+		</div>
+		<a href="https://github.com/dev-david-alves" target="_blank" rel="noopener noreferrer">
+			<i class="fa fa-github" aria-hidden="true"></i>
+			My GitHub
+		</a>
+	</footer>
+	<script type="text/javascript" src="main.js"></script>
+	<script src="https://use.fontawesome.com/8f27db9a15.js"></script>
+</body>
+</html>
